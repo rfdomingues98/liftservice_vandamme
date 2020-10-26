@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Liftservice Vandamme</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="logo">
+          <img src="img/Logo.svg" alt="Liftservice Vandamme Logo" />
+        </li>
+        <a href="#"><li class="item" lang-text="nav-home">Home</li></a>
+        <a href="#about"><li class="item" lang-text="nav-about">About</li></a>
+        <a href="#contacts"
+          ><li class="item" lang-text="nav-contacts">Contacts</li></a
+        >
+        <li class="item has-submenu">
+          <a class="submenu-link" tabindex="0" lang-text="nav-language"
+            >Language</a
+          >
+          <ul class="submenu">
+            <li class="subitem" data-reload>
+              <a href="?lang=en-us"><img src="img/us_flag.svg" />English</a>
+            </li>
+            <li class="subitem" data-reload>
+              <a href="?lang=pt"><img src="img/pt_flag.svg" />Portugês</a>
+            </li>
+          </ul>
+        </li>
+        <li class="toggle">
+          <a href="#"><i class="fa fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="header">
+        <div class="background-image"></div>
+        <div class="content">
+          <div class="container">
+            <h1>Liftservice Vandamme</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              consequatur odit commodi suscipit? Ea fugit necessitatibus commodi
+              deleniti, magnam asperiores.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <header>
+            <h1 lang-text="nav-about">About</h1>
+          </header>
+          <div class="row">
+            <div class="col-md-6">
+              <p lang-text="about">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Recusandae voluptates sint reiciendis amet quod? Voluptatem amet
+                neque, beatae fuga sequi qui ut iste perferendis quam animi
+                harum? Aspernatur magnam error commodi magni nihil? Aliquam vero
+                porro laudantium dolor minima exercitationem labore repudiandae
+                quisquam. Fugiat perferendis accusamus omnis inventore illo
+                incidunt? Modi quidem iure atque a ullam distinctio ex. Ex quos
+                pariatur deserunt? Nisi sit laudantium officia mollitia!
+                Provident ipsam adipisci impedit reprehenderit ipsum unde aut
+                culpa nulla quasi molestias perferendis eos, recusandae aliquam
+                consequuntur ratione illum sit nostrum temporibus laboriosam
+                distinctio fugiat ut! Ex commodi mollitia illum exercitationem
+                atque est!
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img
+                id="price-range"
+                src="img/mapa.jpg"
+                alt="Mapa colorido para diferentes preços"
+              />
+              <div id="priceRangeModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01" />
+                <div id="caption"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="solutions" class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="title">Standard</div>
+                <div class="features">
+                  <ul>
+                    <li><span>5</span> Edits</li>
+                    <li><span>1GB</span> Storage</li>
+                    <li><span>3</span> Pages</li>
+                    <li><span>1</span> Hour free support</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn">Check it out</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="title">Expert</div>
+                <div class="features">
+                  <ul>
+                    <li><span>10</span> Edits</li>
+                    <li><span>10GB</span> Storage</li>
+                    <li><span>9</span> Pages</li>
+                    <li><span>5</span> Hour free support</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn">Check it out</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="title">Expert</div>
+                <div class="features">
+                  <ul>
+                    <li><span>10</span> Edits</li>
+                    <li><span>10GB</span> Storage</li>
+                    <li><span>9</span> Pages</li>
+                    <li><span>5</span> Hour free support</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn">Check it out</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="title">Elite</div>
+                <div class="features">
+                  <ul>
+                    <li><span>Unlimited</span> Edits</li>
+                    <li><span>20GB</span> Storage</li>
+                    <li><span>unlimited</span> Pages</li>
+                    <li><span>Unlimited</span> free support</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn">Check it out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <div class="container">
+          <header>
+            <h1 lang-text="nav-contacts">Contacts</h1>
+          </header>
+          <div class="contact-form">
+            <form method="POST" action="">
+              <div class="row">
+                <div class="input-effect col-md-6">
+                  <label hidden lang-text="first-name-label" for="firstName"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="First Name"
+                    lang-text="first-name-input"
+                  />
+                </div>
+                <div class="input-effect col-md-6">
+                  <label hidden lang-text="last-name-label" for="lastName"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="Last Name"
+                    lang-text="last-name-input"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-effect col-md-12">
+                  <label hidden lang-text="email-label" for="email"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    lang-text="email-input"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-effect col-md-12">
+                  <label hidden lang-text="message-label" for="message"
+                    >Message</label
+                  >
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="10"
+                    placeholder="Message"
+                    lang-text="message-input"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <button type="submit" lang-text="send-btn">Send</button>
+                  <button type="reset" lang-text="reset-btn">Reset</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2020</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/lang.js" defer></script>
+  </body>
+</html>
