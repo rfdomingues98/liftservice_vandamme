@@ -11,27 +11,32 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Liftservice Vandamme</title>
   </head>
+
   <body>
     <nav>
       <ul class="menu">
         <li class="logo">
           <img src="img/Logo.svg" alt="Liftservice Vandamme Logo" />
         </li>
-        <a href="#"><li class="item" lang-text="nav-home">Home</li></a>
-        <a href="#about"><li class="item" lang-text="nav-about">About</li></a>
-        <a href="#contacts"
-          ><li class="item" lang-text="nav-contacts">Contacts</li></a
-        >
+        <li class="item" lang-text="nav-home">
+          <a href="#"> Inicio </a>
+        </li>
+        <li class="item" lang-text="nav-about">
+          <a href="#about"> Sobre </a>
+        </li>
+        <li class="item" lang-text="nav-contacts">
+          <a href="#contacts"> Contactos </a>
+        </li>
         <li class="item has-submenu">
           <a class="submenu-link" tabindex="0" lang-text="nav-language"
-            >Language</a
+            >Idioma</a
           >
           <ul class="submenu">
             <li class="subitem" data-reload>
-              <a href="?lang=en-us"><img src="img/us_flag.svg" />English</a>
+              <a href="?lang=pt"><img src="img/pt_flag.svg" />Portugês</a>
             </li>
             <li class="subitem" data-reload>
-              <a href="?lang=pt"><img src="img/pt_flag.svg" />Portugês</a>
+              <a href="?lang=en-us"><img src="img/us_flag.svg" />English</a>
             </li>
           </ul>
         </li>
@@ -59,27 +64,65 @@
       <section id="about">
         <div class="container">
           <header>
-            <h1 lang-text="nav-about">About</h1>
+            <h1 lang-text="nav-about">Sobre</h1>
           </header>
           <div class="row">
             <div class="col-md-6">
-              <p lang-text="about">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Recusandae voluptates sint reiciendis amet quod? Voluptatem amet
-                neque, beatae fuga sequi qui ut iste perferendis quam animi
-                harum? Aspernatur magnam error commodi magni nihil? Aliquam vero
-                porro laudantium dolor minima exercitationem labore repudiandae
-                quisquam. Fugiat perferendis accusamus omnis inventore illo
-                incidunt? Modi quidem iure atque a ullam distinctio ex. Ex quos
-                pariatur deserunt? Nisi sit laudantium officia mollitia!
-                Provident ipsam adipisci impedit reprehenderit ipsum unde aut
-                culpa nulla quasi molestias perferendis eos, recusandae aliquam
-                consequuntur ratione illum sit nostrum temporibus laboriosam
-                distinctio fugiat ut! Ex commodi mollitia illum exercitationem
-                atque est!
-              </p>
+              <div class="about-text" lang-text="about">
+                <p>
+                  Com o nosso elevador exterior (grua) podemos executar todo o
+                  transporte vertical dos materiais, das cargas, dos móveis,
+                  etc...
+                </p>
+                <p>
+                  O elevador pode ser utilizado para mudanças completas, mas
+                  também para levantar ou baixar todos os materiais de
+                  construção (painéis, placas, telhas, tijolos, ladrilhos, ...),
+                  móveis, painéis solares, cozinhas, etc...
+                </p>
+              </div>
+              <div class="about-info">
+                <h3>
+                  Informação importante para o utilização do elevador exterior
+                  (grua):
+                </h3>
+                <ul>
+                  <li>
+                    O elevador deve ficar endireitado abaixo da janela ou do
+                    balcão, a um máximo de 7 metros da parede.
+                  </li>
+                  <li>
+                    Precisa pelo menos de uma zona livre de 10 metros, ou 2
+                    zonas de estacionamento.
+                  </li>
+                  <li>
+                    Em alguns casos é preciso requerer uma autorização de
+                    estacionamento.
+                  </li>
+                  <li>
+                    O cliente é responsável pelo pedido e pelo pagamento dessa
+                    autorização.
+                  </li>
+                  <li>
+                    O solo onde fica o elevador deve ser estável e duro, e deve
+                    poder suportar um peso de 3500kg.
+                  </li>
+                  <li>
+                    O elevador deve poder encostar à parede, à janela ou à
+                    balaustrada.
+                  </li>
+                  <li>
+                    O elevador não pode ser utilizado com mau tempo (chuva,
+                    vento forte,etc…).
+                  </li>
+                  <li>
+                    O elevador pode ser utilizado até uma altura de 30 metros
+                    (9° andar) e até 300 kg por carga.
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 vcenter">
               <img
                 id="price-range"
                 src="img/mapa.jpg"
@@ -94,24 +137,27 @@
           </div>
         </div>
         <div id="solutions" class="container">
+          <header>
+            <h1>Preços</h1>
+          </header>
           <div class="row">
             <div class="col-md-3">
               <div class="card">
-                <div class="title">Standard</div>
+                <div class="title">Vermelho</div>
                 <div class="features">
                   <ul>
-                    <li><span>5</span> Edits</li>
+                    <li>Concelho de Mira</li>
                     <li><span>1GB</span> Storage</li>
                     <li><span>3</span> Pages</li>
                     <li><span>1</span> Hour free support</li>
                   </ul>
                 </div>
-                <a href="#" class="btn">Check it out</a>
+                <a href="#" class="btn">Saber mais</a>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card">
-                <div class="title">Expert</div>
+                <div class="title">Laranja</div>
                 <div class="features">
                   <ul>
                     <li><span>10</span> Edits</li>
@@ -120,12 +166,12 @@
                     <li><span>5</span> Hour free support</li>
                   </ul>
                 </div>
-                <a href="#" class="btn">Check it out</a>
+                <a href="#" class="btn">Saber mais</a>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card">
-                <div class="title">Expert</div>
+                <div class="title">Amarelo</div>
                 <div class="features">
                   <ul>
                     <li><span>10</span> Edits</li>
@@ -134,12 +180,12 @@
                     <li><span>5</span> Hour free support</li>
                   </ul>
                 </div>
-                <a href="#" class="btn">Check it out</a>
+                <a href="#" class="btn">Saber mais</a>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card">
-                <div class="title">Elite</div>
+                <div class="title">Verde</div>
                 <div class="features">
                   <ul>
                     <li><span>Unlimited</span> Edits</li>
@@ -148,7 +194,7 @@
                     <li><span>Unlimited</span> free support</li>
                   </ul>
                 </div>
-                <a href="#" class="btn">Check it out</a>
+                <a href="#" class="btn">Saber mais</a>
               </div>
             </div>
           </div>
@@ -158,71 +204,79 @@
       <section id="contacts">
         <div class="container">
           <header>
-            <h1 lang-text="nav-contacts">Contacts</h1>
+            <h1 lang-text="nav-contacts">Contactos</h1>
           </header>
-          <div class="contact-form">
-            <form method="POST" action="">
-              <div class="row">
-                <div class="input-effect col-md-6">
-                  <label hidden lang-text="first-name-label" for="firstName"
-                    >First Name</label
-                  >
-                  <input
-                    type="text"
-                    name="firstName"
-                    id="firstName"
-                    placeholder="First Name"
-                    lang-text="first-name-input"
-                  />
-                </div>
-                <div class="input-effect col-md-6">
-                  <label hidden lang-text="last-name-label" for="lastName"
-                    >Last Name</label
-                  >
-                  <input
-                    type="text"
-                    name="lastName"
-                    id="lastName"
-                    placeholder="Last Name"
-                    lang-text="last-name-input"
-                  />
-                </div>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="contact-form">
+                <form method="POST" action="">
+                  <div class="row">
+                    <div class="input-effect col-md-6">
+                      <label hidden lang-text="first-name-label" for="firstName"
+                        >Primeiro Nome</label
+                      >
+                      <input
+                        type="text"
+                        name="firstName"
+                        id="firstName"
+                        placeholder="Primeiro Nome"
+                        lang-text="first-name-input"
+                      />
+                    </div>
+                    <div class="input-effect col-md-6">
+                      <label hidden lang-text="last-name-label" for="lastName"
+                        >Último Nome</label
+                      >
+                      <input
+                        type="text"
+                        name="lastName"
+                        id="lastName"
+                        placeholder="Último Nome"
+                        lang-text="last-name-input"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-effect col-md-12">
+                      <label hidden lang-text="email-label" for="email"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                        lang-text="email-input"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-effect col-md-12">
+                      <label hidden lang-text="message-label" for="message"
+                        >Mensagem</label
+                      >
+                      <textarea
+                        name="message"
+                        id="message"
+                        rows="10"
+                        placeholder="Mensagem"
+                        lang-text="message-input"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button type="submit" lang-text="send-btn">Enviar</button>
+                      <button type="reset" lang-text="reset-btn">Limpar</button>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <div class="row">
-                <div class="input-effect col-md-12">
-                  <label hidden lang-text="email-label" for="email"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                    lang-text="email-input"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-effect col-md-12">
-                  <label hidden lang-text="message-label" for="message"
-                    >Message</label
-                  >
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows="10"
-                    placeholder="Message"
-                    lang-text="message-input"
-                  ></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <button type="submit" lang-text="send-btn">Send</button>
-                  <button type="reset" lang-text="reset-btn">Reset</button>
-                </div>
-              </div>
-            </form>
+            </div>
+            <div class="col-md-4 vcenter">
+              <p>Phone: +351 912 345 678</p>
+              <p>Email: geral@liftservice-vandamme.pt</p>
+            </div>
           </div>
         </div>
       </section>

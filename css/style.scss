@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
 }
 
 body {
+  margin: 0;
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +22,7 @@ nav {
   background-color: #fff;
   .menu,
   .submenu {
+    margin: 0;
     list-style-type: none;
     a {
       color: #000;
@@ -38,8 +38,7 @@ nav {
     }
 
     .item {
-      padding: 10px;
-
+      margin: 10px;
       &:hover,
       &:hover::after,
       a:hover,
@@ -225,16 +224,26 @@ main {
     }
   }
   #about {
+    .about-text {
+      p {
+        margin-bottom: 5px;
+      }
+    }
+
+    .about-info {
+    }
+
     .row {
       align-items: center;
+      justify-content: center;
 
       .col-md-6:nth-child(2) {
         text-align: center;
         height: 100%;
 
         #price-range {
-          max-height: 300px;
-          height: 95%;
+          max-width: 100%;
+          height: auto;
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
         }
       }
@@ -251,7 +260,7 @@ main {
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
       border-radius: 5px;
       // margin: 50px 20px 20px 20px;
-      margin: 50px 0;
+      margin: 20px 0;
       width: 100%; /* 1/3 minus the margins (20+20) */
       padding: 20px;
       text-align: center;
@@ -388,6 +397,7 @@ footer {
 section {
   margin-bottom: 5vh;
 }
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -401,11 +411,19 @@ section {
   gap: 20px;
 }
 
+.col-md-3 {
+  grid-column: span 12;
+}
+
+.col-md-4 {
+  grid-column: span 12;
+}
+
 .col-md-6 {
   grid-column: span 12;
 }
 
-.col-md-3 {
+.col-md-8 {
   grid-column: span 12;
 }
 
@@ -417,12 +435,8 @@ section {
   .container {
     width: 750px;
   }
-
-  .col-md-12 {
-    grid-column: span 12;
-  }
-  .col-md-6 {
-    grid-column: span 12;
+  .col-md-4 {
+    grid-column: span 6;
   }
   .col-md-3 {
     grid-column: span 6;
@@ -433,11 +447,15 @@ section {
   .container {
     width: 970px;
   }
-  .col-md-12 {
-    grid-column: span 12;
+
+  .col-md-8 {
+    grid-column: span 8;
   }
   .col-md-6 {
     grid-column: span 6;
+  }
+  .col-md-4 {
+    grid-column: span 4;
   }
   .col-md-3 {
     grid-column: span 3;
@@ -448,6 +466,13 @@ section {
   .container {
     width: 1170px;
   }
+}
+
+.vcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #price-range {
@@ -477,8 +502,7 @@ section {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 1000px;
+  width: 50%;
 }
 
 #caption {

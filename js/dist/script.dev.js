@@ -27,8 +27,6 @@ function toggleItem() {
     this.classList.add("submenu-active");
   }
 }
-/* Event Listeners */
-
 
 var _iteratorNormalCompletion = true;
 var _didIteratorError = false;
@@ -43,8 +41,6 @@ try {
       item.addEventListener("keypress", toggleItem, false);
     }
   }
-  /* Close Submenu From Anywhere */
-
 } catch (err) {
   _didIteratorError = true;
   _iteratorError = err;
